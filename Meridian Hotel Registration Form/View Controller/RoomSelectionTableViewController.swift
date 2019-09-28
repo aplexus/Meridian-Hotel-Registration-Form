@@ -24,12 +24,11 @@ class RoomSelectionTableViewController: UITableViewController {
         let roomType = RoomType.all[row]
         
         configure(cell: cell, with: roomType)
-        
         return cell
     }
     
     //MARK: - ... UITableViewDelegate
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let row = indexPath.row
         selectedRoomType = RoomType.all[row]
@@ -42,7 +41,7 @@ class RoomSelectionTableViewController: UITableViewController {
         cell.detailTextLabel?.text = "$\(roomType.price)"
         
         guard let selectedRoomType = selectedRoomType else {return}
-        cell.accessoryType = roomType  == selectedRoomType ? .checkmark: .none
+        cell.accessoryType = roomType  == selectedRoomType ? .checkmark : .none
     }
 }
 
