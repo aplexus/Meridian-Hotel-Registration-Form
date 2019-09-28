@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		5B13FEC6233F4427007227E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FEC5233F4427007227E9 /* AppDelegate.swift */; };
 		5B13FEC8233F4427007227E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FEC7233F4427007227E9 /* SceneDelegate.swift */; };
-		5B13FECA233F4427007227E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FEC9233F4427007227E9 /* ViewController.swift */; };
 		5B13FECD233F4427007227E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B13FECB233F4427007227E9 /* Main.storyboard */; };
 		5B13FECF233F4429007227E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B13FECE233F4429007227E9 /* Assets.xcassets */; };
 		5B13FED2233F4429007227E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B13FED0233F4429007227E9 /* LaunchScreen.storyboard */; };
+		5B13FEDA233F4490007227E9 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FED9233F4490007227E9 /* Registration.swift */; };
+		5B13FEDD233F44C7007227E9 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FEDC233F44C7007227E9 /* RegistrationTableViewController.swift */; };
+		5B13FEE0233F450F007227E9 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13FEDF233F450F007227E9 /* RoomType.swift */; };
+		5B1E883F233F8784001C8892 /* RoomSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E883E233F8784001C8892 /* RoomSelectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B13FEC2233F4427007227E9 /* Meridian Hotel Registration Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meridian Hotel Registration Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B13FEC5233F4427007227E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B13FEC7233F4427007227E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B13FEC9233F4427007227E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B13FECC233F4427007227E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B13FECE233F4429007227E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B13FED1233F4429007227E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B13FED3233F4429007227E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B13FED9233F4490007227E9 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		5B13FEDC233F44C7007227E9 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		5B13FEDF233F450F007227E9 /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		5B1E883E233F8784001C8892 /* RoomSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		5B13FEC4233F4427007227E9 /* Meridian Hotel Registration Form */ = {
 			isa = PBXGroup;
 			children = (
+				5B13FEDB233F44A4007227E9 /* Model */,
+				5B13FEDE233F44D4007227E9 /* View Controller */,
 				5B13FEC5233F4427007227E9 /* AppDelegate.swift */,
 				5B13FEC7233F4427007227E9 /* SceneDelegate.swift */,
-				5B13FEC9233F4427007227E9 /* ViewController.swift */,
 				5B13FECB233F4427007227E9 /* Main.storyboard */,
 				5B13FECE233F4429007227E9 /* Assets.xcassets */,
 				5B13FED0233F4429007227E9 /* LaunchScreen.storyboard */,
 				5B13FED3233F4429007227E9 /* Info.plist */,
 			);
 			path = "Meridian Hotel Registration Form";
+			sourceTree = "<group>";
+		};
+		5B13FEDB233F44A4007227E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B13FED9233F4490007227E9 /* Registration.swift */,
+				5B13FEDF233F450F007227E9 /* RoomType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B13FEDE233F44D4007227E9 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B13FEDC233F44C7007227E9 /* RegistrationTableViewController.swift */,
+				5B1E883E233F8784001C8892 /* RoomSelectionTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B13FECA233F4427007227E9 /* ViewController.swift in Sources */,
 				5B13FEC6233F4427007227E9 /* AppDelegate.swift in Sources */,
+				5B13FEDA233F4490007227E9 /* Registration.swift in Sources */,
+				5B13FEE0233F450F007227E9 /* RoomType.swift in Sources */,
+				5B1E883F233F8784001C8892 /* RoomSelectionTableViewController.swift in Sources */,
+				5B13FEDD233F44C7007227E9 /* RegistrationTableViewController.swift in Sources */,
 				5B13FEC8233F4427007227E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
